@@ -1,0 +1,135 @@
+body {
+  background: lightblue;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: darkblue;
+  margin-bottom: 3rem;
+}
+
+.underline {
+  border: 3px solid darkblue;
+  width: 4.5rem;
+  position: relative;
+  top: -1rem;
+}
+
+.jobs {
+  width: 100%;
+  display: flex;
+}
+.buttons {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobbtn {
+  width: 60%;
+  margin-bottom: 0;
+  padding: 0.8rem 0;
+  font-weight: bold;
+  transition: 0.35s;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  position: relative;
+  bottom: -0.3rem;
+  cursor: pointer;
+}
+
+.jobbtn:hover {
+  color: white;
+}
+.activebtn {
+  color: white;
+  border-left: 5px solid white;
+}
+.jobinfo {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.jobinfo > h3 {
+  color: darkblue;
+}
+
+.jobinfo > h4 {
+  padding: 0.5rem;
+  background-color: lightgrey;
+  display: inline-block;
+  position: relative;
+  top: -1.5rem;
+}
+
+.jobinfo > p {
+  color: white;
+  position: relative;
+  top: -1rem;
+}
+.jobdesc {
+  display: flex;
+}
+
+.jobdesc > p {
+  margin-left: 2rem;
+  color: black;
+  font-size: 1.2rem;
+  position: relative;
+  top: -1.5rem;
+}
+
+.moreinfo {
+  display: flex;
+  justify-content: center;
+}
+
+.moreinfo > button {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  letter-spacing: 0.3rem;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+  transition: 0.4s;
+}
+
+.moreinfo > button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+@media (max-width: 860px) {
+  .title {
+    margin-bottom: 0.4rem;
+  }
+  .jobs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .jobbtn {
+    width: 20%;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .activebtn {
+    color: white;
+    border-bottom: 5px solid white;
+    border-left: 0px;
+  }
+}
